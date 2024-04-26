@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --dark: #0F2836;
+    --middle: #D4DFE4;
+    --middledarker: #4f585c;
+    --light: #FFFFFF;
+    
+}

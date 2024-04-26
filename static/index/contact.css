@@ -1,0 +1,55 @@
+:root{
+    --dark: #0F2836;
+    --middle: #D4DFE4;
+    --middledarker: #4f585c;
+    --light: #FFFFFF;
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card{
+    background-color: var(--light);
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30px;
+    padding: 20px;
+
+    
+    box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.5);
+}
+
+
+.contact{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+.contact .title{
+    
+    font-size: 30px;
+}
+
+.contact .text{
+    font-size: 18px;
+    margin-top: 5px;
+    
+}
+
+.contact .contactinfo{
+    background-color: blue;
+    font-size: 10px;
+}
+
+

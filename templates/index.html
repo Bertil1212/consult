@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='index/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='index/body.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='index/contact.css')}}">
+<!-- AutoReload firefox -->
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div id="underscore"></div>
+        <div onclick="ClickNav(0)" class="navhome navbaritem txt">
+            HOME
+        </div>
+        <div onclick="ClickNav(1)" class="navcompetences navbaritem txt">
+            ABILITIES
+        </div>
+        <div onclick="ClickNav(2)" class="navmore navbaritem txt">
+            MORE 
+        </div>
+        <div onclick="ClickNav(3)" class="navcontact navbaritem txt">
+            CONTACT 
+        </div>
+    </div>
+
+    <div id="carousell" class="carousell">
+        <div class="main homec">
+            <div class="card">hej</div>
+
+
+
+        </div>
+        <div class="main competencesc">abilities</div>
+        <div class="main morec">more</div>
+        <div class="main contact txt">
+
+            <div class="card titlecol">
+                <div class="title">Contact Us</div>
+                <div class="text">Contact us to book a free, no-commitment project counseling meeting</div>
+            </div>
+
+            <div class="card contactinfo">awd</div>
+            <div class="card contactform"></div>
+        </div>
+   </div>
+
+   <div class="bottom txt">
+        <div class="bottomcol bottomcol1">
+            <div class="bottomtitle">One-Stop Solution</div>
+            <div class="bottomtxt">
+                We offer complete solutions in microelectronics, CAD, small scale manufacturing, hosting, software and web development, expertly integrating all aspects to fulfill your project needs.
+            </div>
+        </div>
+
+        <div class="bottomdivider"></div>
+        
+        <div class="bottomcol bottomcol2">
+            <div class="bottomtitle">Small Scale Production</div>
+            <div class="bottomtxt">Our small scale production is tailored for flexibility, allowing for orders as small as just one unit. This approach is perfect for custom, limited-run projects, providing you with exactly what you need, when you need it.</div>
+
+        </div>
+        
+        <div class="bottomdivider"></div>
+        
+        <div class="bottomcol bottomcol3" onclick="ClickNav(3)">            
+            <div class="bottomtitle">Free Project Counseling</div>
+            <div class="bottomtxt">Unsure about our services? We offer no-commitment, free counseling to discuss your needs and determine how we can best assist you, ensuring you make the most informed decision.</div>
+
+        </div>
+
+    </div>
+
+    <script src="{{url_for('static', filename='index/index.js')}}"></script>
+</body>
+</html>
