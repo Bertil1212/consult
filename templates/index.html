@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hello</title>
 
-    <link rel="stylesheet" href="{{url_for('static', filename='index/index.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='index/body.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='index/contact.css')}}">
+    <link rel="stylesheet" href="static/index.css">
+    <link rel="stylesheet" href="static/body.css">
+    <link rel="stylesheet" href="static/contact.css">
 <!-- AutoReload firefox -->
   <script type="text/javascript" src="http://livejs.com/live.js"></script>
 </head>
 <body>
-
+    {{2*2}}
     <div class="navbar">
         <div id="underscore"></div>
         <div onclick="ClickNav(0)" class="navhome navbaritem txt">
@@ -76,6 +76,6 @@
 
     </div>
 
-    <script src="{{url_for('static', filename='index/index.js')}}"></script>
+    <script src="static/index.js"></script>
 </body>
 </html>
