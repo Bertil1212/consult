@@ -112,7 +112,7 @@
     height: 320px;
     display: flex;
     padding: 0px;
-    padding-top: 20px;
+    
 }
 
 
@@ -124,10 +124,10 @@
     width:100%;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     
      
-    overflow-y: auto;
-    
+  
     
 }
 
@@ -177,6 +177,8 @@
     padding: 2px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
@@ -202,8 +204,16 @@
 }
 
 @media(max-width: 710px){
+    .titlecol{
+        padding: 10px;
+    }
+
     .titlecol .text{
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    .contact .contactinfo{
+        height: 120px;
     }
     .infoline .contactinfomore{
         font-size: 14px;
@@ -218,7 +228,7 @@
     .contactform form{
        
         flex-wrap: nowrap;
-        padding-top: 150px;
+        
         
     }
 
