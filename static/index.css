@@ -39,6 +39,7 @@ body{
 
     position: relative; 
     font-size: 20px;
+    height: 60px;
 }
 .navbaritem{
     display: flex;
@@ -77,10 +78,10 @@ body{
 .main{
     
     background-color: var(--middle);
-    height: 800px;
+    height: calc(100% - 190px);
     width: 100vw;
     font-size: 500px;
-    overflow: hidden;
+    overflow: hidden;        
     
     
 }
@@ -97,7 +98,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: auto;
+    height: 190px;
 }
 
 
@@ -134,7 +135,7 @@ body{
     color: var(--middledarker);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
     .bottomdivider{
         height: 90px;
     }
@@ -150,7 +151,15 @@ body{
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+    .main{
+        height: calc(100vh - 120px);
+        overflow-y: auto;
+        overflow: hidden;
+    }
+    .bottom{
+        height: 60px;
+    }
     .bottomdivider{
         height: 40px;
     }

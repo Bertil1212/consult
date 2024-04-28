@@ -15,7 +15,7 @@
 .card{
     background-color: var(--light);
     border-radius: 3px;
-    margin: 20px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +53,7 @@
 }
 
 .contact .contactinfo{
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 0;
     font-size: 10px;
     display: flex;
@@ -64,6 +64,18 @@
     padding: 20px;
     padding-left: 13px;
 
+}
+.contactinfo.img{
+
+    object-fit: contain;
+   max-width: 100%;
+   max-height: 100%;
+   width: auto;
+   height: auto;
+   padding: 0px;
+    
+    
+      
 }
 
 .contactinfo.txt{
@@ -96,24 +108,127 @@
 
 }
 
-@media (max-width: 1450px) {
-    .infoline .contactinfomore{
-        font-size: 13px;
-        line-height: 16px;
-        padding: 15px;
-    }
+.card.contactform{
+    height: 320px;
+    display: flex;
+    padding: 0px;
+    padding-top: 20px;
+}
 
-    .contact .text{
-        font-size: 15px;
+
+.contactform form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    
+     
+    overflow-y: auto;
+    
+    
+}
+
+.inputgroup{
+    display: flex;
+    flex-direction: column;
+    width: 40%
+    
+}
+
+.inputgroup label{
+    height: 20px;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.inputgroup input{
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.inputgroup #messageinput{
+    height: 100px;
+    scroll-behavior: auto;
+    resize: none;
+}
+
+.inputgroup.gdprgroup{
+    flex-direction: row;
+    margin: 0px;
+}
+
+.gdprgroup label{
+    font-size: 12px;
+    margin: 10px;
+}
+
+.gdprgroup input{
+    margin-top: 2px;
+    padding: 0px;
+    height: 40px;
+    width: 40px;
+}
+.contactform #submit{
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+
+
+@media (max-width: 1450px) {
+    .contact{
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+    
+}
+
+
+
+@media(max-width: 1000px){
+    .contact{
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
 }
 
-@media (max-width: 1260px) {
+@media(max-width: 710px){
+    .titlecol .text{
+        font-size: 13px;
+    }
     .infoline .contactinfomore{
-        font-s
+        font-size: 14px;
+        line-height: 18px;
     }
 
-    .contact .text{
-        font-size: 15px;
+    .inputgroup{
+        width: 80%
+        
+    }
+
+    .contactform form{
+       
+        flex-wrap: nowrap;
+        padding-top: 150px;
+        
+    }
+
+    .card.contactform{
+        height: auto;
+    }
+
+}
+@media(max-width: 600px){
+    .infoline .contactinfomore{
+        display: none;
     }
 }
