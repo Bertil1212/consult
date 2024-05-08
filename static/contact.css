@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 30px;
     padding: 20px;
 
     
@@ -31,21 +30,10 @@
     font-size: 10px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    padding-left: 25vw;
-    padding-right: 25vw;
 }
 
-.contact .title{
-    
-    font-size: 30px;
-}
 
-.contact .text{
-    font-size: 18px;
-    margin-top: 5px;
-    
-}
+
 
 .infoline{
     display: flex;
@@ -102,7 +90,7 @@
     flex-grow: 1;
     line-height: 23px;
     font-size: 15px;
-    text-align: left;
+    text-align: center;
     display: flex;
     justify-content: center;
 
@@ -125,6 +113,9 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    overflow: auto;
+    
+    
     
      
   
@@ -163,17 +154,18 @@
 .gdprgroup label{
     font-size: 12px;
     margin: 10px;
+    margin-top: 15px;
 }
 
 .gdprgroup input{
-    margin-top: 2px;
+    margin-top: 6px;
     padding: 0px;
     height: 40px;
     width: 40px;
 }
 .contactform #submit{
-    margin-top: 20px;
-    font-size: 16px;
+    margin-top: 35px;
+    font-size: 18px;
     padding: 2px;
     padding-left: 15px;
     padding-right: 15px;
@@ -186,24 +178,11 @@
 
 
 
-@media (max-width: 1450px) {
-    .contact{
-        padding-left: 15vw;
-        padding-right: 15vw;
-    }
-    
-}
 
 
-
-@media(max-width: 1000px){
-    .contact{
-        padding-left: 1vw;
-        padding-right: 1vw;
-    }
-}
 
 @media(max-width: 710px){
+    
     .titlecol{
         padding: 10px;
     }
@@ -228,6 +207,7 @@
     .contactform form{
        
         flex-wrap: nowrap;
+        padding-top: 20px;
         
         
     }
@@ -238,6 +218,21 @@
 
 }
 @media(max-width: 600px){
+    
+    .navbar{
+        width: 100vw;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .navbaritem{
+        font-size: 13px;
+    }
+
+    .contacttxt.name{
+        font-size: 20px;
+    }
+
     .infoline .contactinfomore{
         display: none;
     }

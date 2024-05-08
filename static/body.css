@@ -11,3 +11,19 @@
     --light: #FFFFFF;
     
 }
+
+.title{
+    font-size: 30px;
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    
+}
+
+.text{
+    font-size: 15px;
+}

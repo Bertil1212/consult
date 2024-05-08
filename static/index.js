@@ -1,3 +1,6 @@
+
+var hardcodedSmallScreenBarDistances = [0.1125, 0.37, 0.63, 0.8875]
+
 var id = 0;
 function ClickNav(id){
     /*
@@ -25,22 +28,32 @@ function ClickNav(id){
 
     //Move the navbar icon
     var line = document.getElementById("underscore");
-    var screedwidth = window.innerWidth;
-    var offset = (id+1)*screedwidth/5-25;
 
-    var tovw = (offset/screedwidth)*100;
-   
-    line.style.left = tovw+"vw";
+    if (window.innerWidth < 600){
+        line.style.left = hardcodedSmallScreenBarDistances[id]*window.innerWidth-25+"px";
+    }else{
+        var screedwidth = window.innerWidth;
+        var offset = (id+1)*screedwidth/5-25;
+
+        var tovw = (offset/screedwidth)*100;
+    
+        line.style.left = tovw+"vw";
+    }
     
 }
 //The nav icon gets abit out of line when the screen is updated.
 function UpdateScreenWidth(){
     var line = document.getElementById("underscore");
-    var screedwidth = window.innerWidth;
-    var offset = (id+1)*screedwidth/5-25;
-    var tovw = (offset/screedwidth)*100;
-    line.style.left = tovw+"vw";  
+    if (window.innerWidth < 600){
+        line.style.left = hardcodedSmallScreenBarDistances[id]*window.innerWidth-25+"px";
+    }else{
+        var screedwidth = window.innerWidth;
+        var offset = (id+1)*screedwidth/5-25;
+        var tovw = (offset/screedwidth)*100;
+        line.style.left = tovw+"vw";  
+    }
+    
 }
 window.onresize = UpdateScreenWidth;
 
-ClickNav(3);
+ClickNav(1);
