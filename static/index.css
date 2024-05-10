@@ -226,7 +226,7 @@ body{
     
     
     .navbaritem{
-        font-size: 15px;
+        font-size: 18px;
     }
     
     
@@ -256,8 +256,9 @@ body{
         padding-right: 5px;
     }
     .navbaritem{
-        font-size: 13px;
-    }
+        font-size: 15px;
+    }    
+
 }
 
 
