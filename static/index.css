@@ -56,6 +56,12 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 }
+h1{
+    all: unset
+}
+h2{
+    all: unset
+}
 .title{
     font-size: 30px;
     text-align: center;
