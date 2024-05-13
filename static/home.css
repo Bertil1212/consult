@@ -1,0 +1,25 @@
+
+
+.homec img{
+    max-width: min(100%,200px);
+       
+}
+
+.homec .paddingcard{
+    height:7vw;
+}
+
+.homec .holder{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 45px;
+    padding-right: 45px;
+    
+}
+
+.homec .holder .card{
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-shrink: 1;
+    
+}

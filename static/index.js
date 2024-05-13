@@ -56,6 +56,7 @@ function UpdateScreenWidth(){
 }
 window.onresize = UpdateScreenWidth;
 
-ClickNav(1);
+ClickNav(3);
+
 
 
