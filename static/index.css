@@ -57,10 +57,15 @@ body{
 
 }
 h1{
-    all: unset
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 h2{
-    all: unset
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 .title{
     font-size: 30px;
