@@ -49,6 +49,7 @@ body{
     position: fixed;
 }
 
+
 .hidden{
     z-index: -10;
 }
