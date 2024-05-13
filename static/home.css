@@ -1,7 +1,9 @@
 
 
 .homec img{
-    max-width: min(100%,200px);
+    max-width: 100%;
+    object-fit: cover;
+    height: 150px;
        
 }
 
@@ -12,8 +14,8 @@
 .homec .holder{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 45px;
-    padding-right: 45px;
+    
+    justify-content: center;
     
 }
 
@@ -21,5 +23,21 @@
     flex-wrap: wrap;
     flex-direction: column;
     flex-shrink: 1;
+    padding: 10px;
+    height: 170px;
     
+}
+
+
+@media (max-width: 530px) {
+    .homec .holder .card{
+        height: 100px;
+        
+    }
+
+    .homec img{
+        
+        height: 80px;
+           
+    }
 }
