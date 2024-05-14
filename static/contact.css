@@ -138,6 +138,7 @@
 .inputgroup.gdprgroup{
     flex-direction: row;
     margin: 0px;
+    height: 60px
 }
 
 .gdprgroup label{
@@ -176,6 +177,7 @@
 
     .contact .contactinfo{
         height: 120px;
+        padding: 5px;
     }
     .infoline .contactinfomore{
         font-size: 14px;
