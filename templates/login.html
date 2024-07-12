@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+
+    <link rel="stylesheet" href="static/index.css">
+
+</head>
+<body>
+    <div class="card txt">
+        <div class="title">Admin Login</div>
+        
+        <div class="subtitle">Username:</div>
+        <input type="text" id="username">
+        
+        <div class="subtitle">Password:</div>
+        <input type="text" id="Password">
+        
+        <button id="LoginButton" onclick="Login()">Login</button>
+        
+    </div>
+
+
+    <script>
+        function Login(){
+            fetch('/lgreq', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ usn: usn }),
+                body: JSON.stringify({ pwd: pwd })
+
+            })
+            .then(response => response.json())
+            .then(data => {
+                error.console("Trying to login");
+            })
+            .catch((error) => {
+                error.console("Login Error");
+            });
+        }
+    </script>
+    
+    
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 100vw;
+            max-width: 600px;
+        }
+        .subtitle{
+            margin-top: 10px;
+        }
+
+        button{
+            margin: 30px;
+            font-size: 20px;
+        }
+
+
+
+
+
+    </style>
+</body>
+</html>

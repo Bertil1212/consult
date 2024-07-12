@@ -1,0 +1,47 @@
+.admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+.login{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    padding: 15px;
+}
+
+.login #pwd{
+    margin-right: 10px;
+}
+.login .submit{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.admin .content{
+    max-width: 600px;
+}
+
+.admin .content .card{
+    align-items: baseline;
+}
+
+
+
+.content .subtitle{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content .data{
+    margin-bottom: 23px;
+}
+
+
